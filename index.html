@@ -1,0 +1,667 @@
+<!DOCTYPE html>
+<html lang="cs">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsivni</title>
+    <link rel="stylesheet" href="https://api-ssps.cajthaml.eu/file/global/css/reset_ld9mrCCm.css">
+    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+    <script src="https://kit.fontawesome.com/4abc9d5eba.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <!--     
+    https://www.w3schools.com/css/css3_box-sizing.asp
+    -->
+
+
+    <style>
+        body {
+            overflow-x: hidden;
+            width: 100vw;
+            height: 100vh;
+            background-color: #fff;
+            font-family: 'Roboto', sans-serif;
+        }
+        
+        .Nav {
+            width: 75%;
+            height: 60px;
+            margin-left: auto;
+            margin-right: auto;
+            display: flex;
+        }
+        
+        .LogoAwbaText {
+            display: flex;
+            width: 45%;
+            height: 100%;
+            justify-content: flex-start;
+            align-items: center;
+        }
+        
+        .Logo {
+            width: 60%;
+            height: 80%;
+            background-image: url("https://api-ssps.cajthaml.eu/file/2021-2022/2-wba/22/logo_MtAtpg2I.png");
+            background-size: 20% 100%;
+            background-repeat: no-repeat;
+            display: flex;
+            justify-content: flex-end;
+        }
+        
+        .WBAtext {
+            width: 60%;
+            height: 50%;
+            font-weight: bold;
+            font-size: 2.8em;
+            color: #16697A;
+            padding-right: 20%;
+        }
+        
+        .ItemsInNav {
+            width: 55%;
+            height: 100%;
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+        }
+        
+        .PrihlasitSe {
+            color: #FFF;
+            height: 30%;
+            width: 15%;
+            background-color: #16697A;
+            padding: 5px;
+        }
+        
+        .Fbox1 {
+            width: 75%;
+            height: 400px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        
+        .Boxes {
+            height: 15%;
+            width: 100%;
+            display: flex;
+        }
+        
+        .Box1 {
+            width: 50%;
+            height: 100%;
+            display: flex;
+            flex-direction: row;
+        }
+        
+        .Box2 {
+            width: 50%;
+            height: 100%;
+            display: flex;
+            flex-direction: row;
+        }
+        
+        .Boxes> :nth-child(1n)>:nth-child(1n) {
+            padding-top: 20px;
+        }
+        
+        .Ukoly {
+            height: 100%;
+            width: 50%;
+            background-color: #16697A;
+            color: #FFF;
+            text-align: center;
+        }
+        
+        .Zaverka {
+            height: 100%;
+            width: 50%;
+            background-color: #DB6400;
+            color: #FFF;
+            text-align: center;
+        }
+        
+        .Aktivita {
+            height: 100%;
+            width: 50%;
+            color: #FFF;
+            background-color: #FFA62B;
+            text-align: center;
+        }
+        
+        .Testy {
+            height: 100%;
+            width: 50%;
+            color: #FFF;
+            background-color: #393E46;
+            text-align: center;
+        }
+        
+        .Obrazek {
+            height: 78%;
+            width: 100%;
+            background-image: url("https://api-ssps.cajthaml.eu/file/2021-2022/2-wba/22/google_eTAtUtuf.jpg");
+            background-size: 100% 100%;
+            background-repeat: no-repeat;
+        }
+        
+        .ImgFooterLine {
+            height: 1%;
+            width: 100%;
+            background-color: #242424;
+        }
+        
+        .Fbox1>:nth-child(4) {
+            display: flex;
+            justify-content: flex-end;
+            color: #FFF;
+            gap: 30px;
+        }
+        
+        .FooterObrazku {
+            height: 5%;
+            width: 100%;
+            background-color: #333333;
+        }
+        
+        .FooterObrazku>:nth-child(1) {
+            padding-right: 20px;
+        }
+        
+        .Fbox2 {
+            height: 200px;
+            width: 75%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            background-color: #F2F2F2;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        
+        .NadpisOpredmetu {
+            height: 40%;
+            width: 25%;
+            font-size: 1.8em;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        
+        .NadpisOpredmetu>:nth-child(1n) {
+            padding-left: auto;
+            padding-right: auto;
+        }
+        
+        .UnderHeaderLine {
+            margin-top: 10px;
+            height: 5%;
+            width: 65%;
+            background-color: #DBDBDB;
+        }
+        
+        .TextOpredmetu {
+            text-align: center;
+            margin: 10px;
+        }
+        
+        .Fbox3 {
+            height: 200px;
+            width: 75%;
+            background-color: #FFF;
+            display: flex;
+            margin-left: auto;
+            margin-right: auto;
+            flex-direction: row;
+        }
+        
+        .AllIcones {
+            height: 100%;
+            width: 100%;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        .Icones1 {
+            width: 50%;
+            height: 100%;
+            display: flex;
+            flex-direction: row;
+            justify-content: flex-end;
+            align-items: center;
+        }
+        
+        .Icones2 {
+            width: 50%;
+            height: 100%;
+            display: flex;
+            flex-direction: row;
+            justify-content: flex-start;
+            align-items: center;
+        }
+        
+        .IconeOrange {
+            height: 75%;
+            width: 20%;
+            border: #EDB180 solid 5px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding-top: 20px;
+        }
+        
+        .IconeBlue {
+            height: 75%;
+            width: 20%;
+            border: #277484 solid 5px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding-top: 20px;
+        }
+        
+        .OrangeText {
+            border: #EDB180 solid 2px;
+            padding: 10px;
+            border-radius: 40px;
+        }
+        
+        .BlueText {
+            border: #277484 solid 1px;
+            padding: 10px;
+            border-radius: 40px;
+            box-sizing: border-box;
+        }
+        
+        .Fbox4 {
+            height: 150px;
+            width: 75%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            background-color: #F2F2F2;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        
+        .Citat {
+            color: black;
+            font-weight: bold;
+            font-size: 2em;
+        }
+        /* .Fbox5 {
+            width: 75%;
+            height: 200px;
+            background-color: black;
+            display: flex;
+            flex-direction: row;
+            margin-left: auto;
+            margin-right: auto;
+        } */
+        
+        .WebStranky {
+            color: white;
+            font-size: 1.2em;
+        }
+        
+        .Kontakt {
+            color: white;
+            font-size: 1.2em;
+        }
+        
+        .WBA {
+            color: white;
+            font-size: 1.2em;
+        }
+        
+        @media (max-width:360px) {
+            /* Nevipada pekne mit pod sebou logo a moznosti, ale neumim udelat aby to bylo vysouvaci, coz by bylo hezci */
+            /* z neznameho duvodu se my neroztahl nav, proto vypada spatne */
+            body {
+                width: 100vw;
+                height: auto;
+            }
+            nav {
+                width: 100%;
+            }
+            .Nav {
+                width: 100vw;
+                height: 100px;
+                flex-direction: column;
+                align-items: center;
+            }
+            .LogoAwbaText {
+                flex-direction: column;
+                padding-top: 0px;
+                box-sizing: border-box;
+            }
+            .Logo {
+                width: 100%;
+                height: 80%;
+                background-image: url("https://api-ssps.cajthaml.eu/file/2021-2022/2-wba/22/logo_MtAtpg2I.png");
+                background-size: 20% 100%;
+                background-repeat: no-repeat;
+                display: flex;
+                justify-content: flex-end;
+            }
+            .WBAtext {
+                width: 100%;
+                height: 50%;
+                font-weight: bold;
+                font-size: 2.8em;
+                color: #16697A;
+                padding-right: 0%;
+            }
+            .ItemsInNav {
+                width: 100vw;
+                height: 100%;
+                display: flex;
+                justify-content: space-evenly;
+                align-items: center;
+            }
+            .Fbox1 {
+                height: 400px;
+                width: 100vw;
+            }
+            .Boxes {
+                height: 30%;
+                flex-direction: column;
+            }
+            .Ukoly {
+                height: 50%;
+                width: 50%;
+            }
+            .Box1 {
+                width: 100%;
+                height: 50%;
+                display: flex;
+                flex-direction: row;
+            }
+            .Box2 {
+                width: 100%;
+                height: 50%;
+                display: flex;
+                flex-direction: row;
+            }
+            .Ukoly {
+                height: 100%;
+                width: 50%;
+            }
+            .Boxes> :nth-child(1n)>:nth-child(1n) {
+                padding-top: 0px;
+            }
+            .Fbox2 {
+                height: 380px;
+                width: 100%;
+            }
+            .NadpisOpredmetu {
+                text-align: center;
+                padding-top: 20px;
+                box-sizing: border-box;
+            }
+            .AllIcones {
+                height: 100%;
+                width: 100%;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                align-items: center;
+            }
+            .Icones1 {
+                height: 50%;
+                width: 100%;
+                display: flex;
+                flex-direction: row;
+            }
+            .Icones2 {
+                height: 50%;
+                width: 100%;
+                display: flex;
+                flex-direction: row;
+            }
+            .IconeOrange {
+                height: 100%;
+                width: 50%;
+                border: #EDB180 solid 5px;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                padding-top: 20px;
+                box-sizing: border-box;
+            }
+            .IconeBlue {
+                height: 100%;
+                width: 50%;
+                border: #277484 solid 5px;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                padding-top: 20px;
+                box-sizing: border-box;
+            }
+            .OrangeText {
+                border: #EDB180 solid 2px;
+                padding: 10px;
+                border-radius: 40px;
+                box-sizing: border-box;
+            }
+            .BlueText {
+                border: #277484 solid 1px;
+                padding: 10px;
+                border-radius: 40px;
+                box-sizing: border-box;
+            }
+            .Fbox3 {
+                width: 100%;
+                height: 300px;
+            }
+            .Fbox4 {
+                width: 100%;
+            }
+            .Citat {
+                text-align: center;
+            }
+        }
+        
+        @media(max-width:900px) {
+            body {
+                width: 100vw;
+                height: auto;
+            }
+            .Nav {
+                width: 85%;
+            }
+            .LogoAwbaText {
+                display: flex;
+                width: 35%;
+                height: 100%;
+                justify-content: flex-start;
+                align-items: center;
+            }
+            .Logo {
+                width: 90%;
+            }
+            .WBAtext {
+                width: 60%;
+                height: 50%;
+                font-weight: bold;
+                font-size: 2.8em;
+                color: #16697A;
+                padding-right: 20%;
+            }
+            .ItemsInNav {
+                width: 65%;
+                font-size: 0.9em;
+            }
+            .PrihlasitSe {
+                width: 15%;
+            }
+            .NadpisOpredmetu {
+                font-size: 1.7em;
+                padding-top: 20px;
+                box-sizing: border-box;
+            }
+            .Citat {
+                font-size: 1.6em;
+                text-align: center;
+            }
+        }
+        
+        @media(max-width:1400px) {
+            .ItemsInNav {
+                width: 65%;
+            }
+            .LogoAwbaText {
+                display: flex;
+                width: 25%;
+                height: 100%;
+                justify-content: flex-start;
+                align-items: center;
+            }
+            .Logo {
+                width: 100%;
+                height: 80%;
+            }
+            .PrihlasitSe {
+                width: auto;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <nav>
+        <div class="Nav">
+            <div class="LogoAwbaText">
+                <div class="Logo">
+                    <div class="WBAtext">
+                        <p>WBA</p>
+                    </div>
+                </div>
+            </div>
+            <div class="ItemsInNav">
+                <div class="NavItems">
+                    <p>Jak ziskat body</p>
+                </div>
+                <div class="NavItems">
+                    <p>Uplatneni</p>
+                </div>
+                <div class="NavItems">
+                    <p>Zavercna prace</p>
+                </div>
+                <div class="NavItems">
+                    <p>Napoveda</p>
+                </div>
+                <div class="PrihlasitSe">
+                    <p>Prihlasit se</p>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <hr>
+    <article>
+        <div class="Fbox1">
+            <div class="Boxes">
+                <div class="Box1">
+                    <div class="Ukoly">
+                        <p>UKOLY</p>
+                    </div>
+                    <div class="Zaverka">
+                        <p>ZAVERECNA PRACE</p>
+                    </div>
+                </div>
+                <div class="Box2">
+                    <div class="Aktivita">
+                        <p>AKTIVITA</p>
+                    </div>
+                    <div class="Testy">
+                        <p>TESTY</p>
+                    </div>
+                </div>
+            </div>
+            <div class="Obrazek"></div>
+            <div class="ImgFooterLine"></div>
+            <div class="FooterObrazku">
+                <p>&copy; Pixabay 2020</p>
+            </div>
+            <div class="ImgFooterLine"></div>
+        </div>
+        <div class="Fbox2">
+            <div class="NadpisOpredmetu">
+                <p>O PREDMETU</p>
+                <div class="UnderHeaderLine"></div>
+            </div>
+
+            <div class="TextOpredmetu">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere, eius blanditiis? Minus eos, harum, consequuntur sed laudantium debitis quidem facere, commodi quisquam sapiente tempora. Placeat commodi saepe fugit cum fugiat!
+                    <br> <br>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sit, ex laboriosam. Non consectetur nulla repellendus commodi vero ut sapiente debitis maiores eaque inventore dicta, blanditiis quos illo quisquam. Itaque, cupiditate?
+                </p>
+            </div>
+        </div>
+        <div class="Fbox3">
+            <div class="AllIcones">
+                <div class="Icones1">
+                    <div class="IconeOrange">
+                        <div class="OrangeText">
+                            <i class="fas fa-hourglass-half"></i></div>
+                        <div class="HeaderOrange"></div>
+                    </div>
+                    <div class="IconeBlue">
+                        <div class="BlueText">
+                            <i class="fas fa-school"></i></div>
+                        <div class="HeaderBlue"></div>
+                    </div>
+                </div>
+                <div class="Icones2">
+                    <div class="IconeOrange">
+                        <div class="OrangeText"><i class="fas fa-virus-slash"></i>
+                        </div>
+                        <div class="HeaderOrange">
+                            <h1></h1>
+                        </div>
+                    </div>
+                    <div class="IconeBlue">
+                        <div class="BlueText">
+                            <i class="fas fa-dog"></i>
+                        </div>
+                        <div class="HeaderBlue">
+                            <h1>HAF!</h1>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <div class="Fbox4">
+            <div class="Citat">
+                <p>Všelijako kvantování toliko pro hovada dobré jest</p>
+            </div>
+            <div class="Kdo"></div>
+        </div>
+    </article>
+    <footer>
+        <!-- <div class="Fbox5"> -->
+        <!-- <div class="WebStranky">
+            <p>TEXT</p>
+        </div>
+        <div class="Kontakt">
+            <p>TEXT</p>
+        </div>
+        <div class="WBA">
+            <p>TEXT</p>
+            <</div> -->
+        <!-- </div> -->
+    </footer>
+</body>
+
+</html>
